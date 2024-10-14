@@ -1,4 +1,4 @@
-name: 릴리즈 수동 빌드 with TEST
+name: 릴리즈 수동 빌드 with TEST 1
 on:
   push:
     tags:
