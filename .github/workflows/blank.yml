@@ -18,4 +18,4 @@ jobs:
         shell: bash
         run: |
           echo "SOURCE_TAG=$(echo ${{github.ref_name}})" >> $GITHUB_ENV
-          echo "TAG=${{ github.ref_name }}"
+          echo "TAG=$( ${{github.ref_name}})" >> $GITHUB_ENV
