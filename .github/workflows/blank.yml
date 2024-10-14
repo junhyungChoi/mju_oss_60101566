@@ -17,6 +17,5 @@ jobs:
       - name: 브랜치 이름 추출
         shell: bash
         run: |
-          echo "BRANCH_NAME=$(echo ${{github.ref_name}})" >> $GITHUB_ENV
-          echo "SOURCE_TAG=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
+          echo "SOURCE_TAG=$(echo ${{github.ref_name}})" >> $GITHUB_ENV
           echo "TAG=${{ env.SOURCE_TAG }}"
